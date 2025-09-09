@@ -24,12 +24,32 @@ To write a Python program to find the shortest possible route that visits every 
 ## PYTHON PROGRAM
 
 ```
-ENTER YOUR CODE HERE
+name: kristipati shivani
+reg.no:212222060126
+
+vertex = []
+for i in range(V):
+	if i != s:
+		vertex.append(i)
+min_path=maxsize
+next_permutation=permutations(vertex)
+for i in next_permutation:
+    
+
+
+	current_pathweight = 0
+	k=s
+	for j in i:
+	    current_pathweight+=graph[k][j]
+	    k=j
+	current_pathweight+=graph[k][s]
+	min_path=min(min_path, current_pathweight)
+return min_path
 ```
 
 ## OUTPUT
-```
-```
+<img width="324" height="146" alt="image" src="https://github.com/user-attachments/assets/a925f495-bae3-4bfa-8487-feaa6302297b" />
 
-##RESULT
+## RESULT
+Thus the program to find the shortest possible route using the Travelling Salesman Problem (TSP) approach has been implemented and executed successfully.
 
